@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// variable
+$dark-navy: #020c1b;
+$green: #64ffda;
+$font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+$lightest-slate: #ccd6f6;
+$backdrop: rgba(2, 12, 27, 0.7);
+$navy: #172a45;
+
+body {
+  background-color: $dark-navy;
+  margin: 0 40px;
+  width: 100vw;
+}
+
+// Opening Logo
+@import "./components/OpeningSvg/svg";
+
+// Header
+@import "./components/Header/header";
+
+// Backdrop and sideDrawer
+@import "./components/Header/BackDrop/backdrop";

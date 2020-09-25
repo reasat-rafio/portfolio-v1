@@ -1,38 +1,272 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #020c1b;
+  margin: 0 40px;
+  width: 100vw;
+}
+
+.logo_svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav ul li:first-child a::before, .header-nav ul li:nth-child(2) a::before, .header-nav ul li:nth-child(3) a::before, .header-nav ul li:last-child a::before {
+  margin-right: 5px;
+  color: #64ffda;
+  font-size: 12px;
+  text-align: right;
+}
+
+.active {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 80px;
+  top: 0;
+  -webkit-box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7) !important;
+          box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7) !important;
+  background-color: rgba(10, 25, 47, 0.85);
+}
+
+.header {
+  -webkit-filter: none !important;
+          filter: none !important;
+  pointer-events: auto !important;
+  -webkit-user-select: auto !important;
+     -moz-user-select: auto !important;
+      -ms-user-select: auto !important;
+          user-select: auto !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 0 40px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  width: 100%;
+}
+
+.header-nav .logo {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000 !important;
+}
+
+.header-nav .mobile_menu-btn {
+  z-index: 10000;
+  position: relative;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav .mobile_menu-btn .menu-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  width: 100%;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+.header-nav ul li {
+  margin: 0 15px;
+  font-size: 13px;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: #a8b2d1;
+  cursor: pointer;
+}
+
+.header-nav ul li a:hover {
+  color: #64ffda;
+}
+
+.header-nav ul li:first-child a::before {
+  content: "01" ".";
+}
+
+.header-nav ul li:nth-child(2) a::before {
+  content: "02" ".";
+}
+
+.header-nav ul li:nth-child(3) a::before {
+  content: "03" ".";
+}
+
+.header-nav ul li:last-child a::before {
+  content: "04" ".";
+}
+
+@media (max-width: 767px) {
+  .header .mobile_menu-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+  .header ul {
+    display: none;
+  }
+}
+
+.sideDrawer .drop .sideDrawer_ul li:first-child a::before, .sideDrawer .drop .sideDrawer_ul li:nth-child(2) a::before, .sideDrawer .drop .sideDrawer_ul li:nth-child(3) a::before, .sideDrawer .drop .sideDrawer_ul li:last-child a::before {
+  margin-right: 5px;
+  color: #64ffda;
+  font-size: 15px;
+  text-align: right;
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backdrop {
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(2, 12, 27, 0.7);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sideDrawer {
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 60%;
+  margin-left: auto;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  right: 0;
+  background: #172a45;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.sideDrawer .drop {
+  height: 100%;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideDrawer .drop .menu-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  display: block;
+  margin: 20px 40px 0 auto;
 }
+
+.sideDrawer .drop .sideDrawer_ul {
+  line-height: 30px;
+  margin: auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 20px;
+}
+
+.sideDrawer .drop .sideDrawer_ul li {
+  list-style: none;
+}
+
+.sideDrawer .drop .sideDrawer_ul li a {
+  color: #ccd6f6;
+  text-decoration: none;
+}
+
+.sideDrawer .drop .sideDrawer_ul li a:hover {
+  color: #64ffda;
+}
+
+.sideDrawer .drop .sideDrawer_ul li:first-child a::before {
+  content: "01" ".";
+}
+
+.sideDrawer .drop .sideDrawer_ul li:nth-child(2) a::before {
+  content: "02" ".";
+}
+
+.sideDrawer .drop .sideDrawer_ul li:nth-child(3) a::before {
+  content: "03" ".";
+}
+
+.sideDrawer .drop .sideDrawer_ul li:last-child a::before {
+  content: "04" ".";
+}
+/*# sourceMappingURL=App.css.map */
