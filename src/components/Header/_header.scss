@@ -6,14 +6,10 @@
 }
 .active {
   transition: all 0.2s ease-in-out;
-
   height: 80px;
   top: 0;
-
   box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7) !important;
   background-color: rgba(10, 25, 47, 0.85);
-  .header-nav {
-  }
 }
 .header {
   filter: none !important;

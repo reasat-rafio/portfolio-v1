@@ -12,7 +12,7 @@ const pathVariants = {
 
     transition: {
       duration: 3,
-      ease: "easeInOut",
+      ease: "anticipate",
     },
   }),
 };
@@ -26,7 +26,7 @@ const svgVariants = {
     transition: {
       delay: 3,
       duration: 0.5,
-      ease: "easeInOut",
+      ease: "easeIn",
     },
   },
 };

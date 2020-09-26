@@ -4,7 +4,6 @@ import Cross_menu from "./Cross_menu";
 import Svg from "./Svg";
 
 import { motion } from "framer-motion";
-// import { useCtx } from "../Context/GlobalContext";
 
 const LogoOpacityVariants = {
   initial: {
@@ -13,7 +12,7 @@ const LogoOpacityVariants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 1.2,
     },
   },
 };
@@ -54,28 +53,28 @@ const Header = ({ mbl_menu, setMbl_menu }) => {
           <motion.li
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            transition={{ duration: 1.2, ease: "backOut" }}
+            transition={{ delay: 1.2, duration: 0.5, ease: "backOut" }}
           >
             <a href="#about">About</a>
           </motion.li>
           <motion.li
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            transition={{ duration: 1.4, ease: "backOut" }}
+            transition={{ delay: 1.2, duration: 1, ease: "backOut" }}
           >
             <a href="#experience">Experience</a>
           </motion.li>
           <motion.li
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            transition={{ duration: 1.6, ease: "backOut" }}
+            transition={{ delay: 1.2, duration: 1.5, ease: "backOut" }}
           >
             <a href="#work">Work</a>
           </motion.li>
           <motion.li
             initial={{ y: -100 }}
             animate={{ y: 0 }}
-            transition={{ duration: 1.8, ease: "backOut" }}
+            transition={{ delay: 1.2, duration: 2, ease: "backOut" }}
           >
             <a href="#contact">Contact</a>
           </motion.li>
