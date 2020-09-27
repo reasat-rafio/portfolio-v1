@@ -1,5 +1,4 @@
 .impression {
-  color: white;
   height: 80vh;
 
   .inner {
@@ -40,13 +39,15 @@
         max-width: 500px;
         line-height: 1.3;
         color: $steel;
-        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
-          monospace;
-        font-size: 17px;
+        font-family: $font-roboto;
+        font-size: 18px;
+        font-weight: bold;
+        word-spacing: 2px;
       }
       div {
         line-height: 1.3;
         a {
+          z-index: 1;
           display: inline-block;
           color: $green;
           background-color: transparent;

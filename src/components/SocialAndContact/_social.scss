@@ -81,3 +81,12 @@
     }
   }
 }
+
+@media (max-width: 960px) {
+  .gmail_contact {
+    display: none;
+  }
+  .socials_content {
+    display: none;
+  }
+}

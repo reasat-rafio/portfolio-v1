@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,12 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #020c1b;
+  background-color: #0a192f;
   margin: 0 40px;
   width: 100vw;
 }
@@ -271,90 +277,12 @@ body {
   content: "04" ".";
 }
 
-.impression {
-  color: white;
-  height: 80vh;
-}
-
-.impression .inner {
+.main_body {
+  margin-top: 90px;
+  padding: 0 40px;
   height: 100%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.impression .inner section {
-  max-width: 1000px;
-  padding: 100px 0px;
-  margin: 0px auto;
-}
-
-.impression .inner section h1 {
-  margin: 0px 0px 30px 4px;
-  color: #64ffda;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-size: clamp(14px, 5vw, 16px);
-  font-weight: 400;
-}
-
-.impression .inner section h2 {
-  margin: 0px;
-  font-size: clamp(37px, 8vw, 72px);
-  color: #a8b2d1;
-  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-}
-
-.impression .inner section h3 {
-  margin-top: 10px;
-  color: #8892b0;
-  line-height: 0.9;
-  font-size: clamp(37px, 8vw, 72px);
-  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-}
-
-.impression .inner section p {
-  margin: 20px 0px 0px;
-  max-width: 500px;
-  line-height: 1.3;
-  color: #8892b0;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  font-size: 17px;
-}
-
-.impression .inner section div {
-  line-height: 1.3;
-}
-
-.impression .inner section div a {
-  display: inline-block;
-  color: #64ffda;
-  background-color: transparent;
-  border: 1px solid #64ffda;
-  border-radius: 4px;
-  padding: 1.25rem 1.75rem;
-  font-size: 14px;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-  line-height: 1;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  margin-top: 50px;
-  text-decoration-skip-ink: auto;
-  position: relative;
-  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.impression .inner section div a:hover {
-  background-color: rgba(10, 128, 97, 0.2);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .gmail_contact {
@@ -461,11 +389,394 @@ body {
   margin-top: 70px;
 }
 
-.main_body {
-  margin-top: 90px;
-  padding: 0 40px;
+@media (max-width: 960px) {
+  .gmail_contact {
+    display: none;
+  }
+  .socials_content {
+    display: none;
+  }
+}
+
+.impression {
+  height: 80vh;
+}
+
+.impression .inner {
   height: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.impression .inner section {
+  max-width: 1000px;
+  padding: 100px 0px;
+  margin: 0px auto;
+}
+
+.impression .inner section h1 {
+  margin: 0px 0px 30px 4px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: clamp(14px, 5vw, 16px);
+  font-weight: 400;
+}
+
+.impression .inner section h2 {
+  margin: 0px;
+  font-size: clamp(37px, 8vw, 72px);
+  color: #a8b2d1;
+  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+}
+
+.impression .inner section h3 {
+  margin-top: 10px;
+  color: #8892b0;
+  line-height: 0.9;
+  font-size: clamp(37px, 8vw, 72px);
+  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+}
+
+.impression .inner section p {
+  margin: 20px 0px 0px;
+  max-width: 500px;
+  line-height: 1.3;
+  color: #8892b0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  word-spacing: 2px;
+}
+
+.impression .inner section div {
+  line-height: 1.3;
+}
+
+.impression .inner section div a {
+  z-index: 1;
+  display: inline-block;
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  margin-top: 50px;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.impression .inner section div a:hover {
+  background-color: rgba(10, 128, 97, 0.2);
+}
+
+.about_me {
+  height: 60vh;
+  margin-top: 70px;
+}
+
+.about_me .inner {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_me .inner section {
+  max-width: 900px;
+  padding: 100px 0px;
+  margin: 0px auto;
+}
+
+.about_me .inner section .about_header {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about_me .inner section .about_header h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  margin: auto 20px auto 0;
+  font-size: clamp(26px, 5vw, 40px);
+  white-space: nowrap;
+  line-height: 1.1;
+  color: #ccd6f6;
+}
+
+.about_me .inner section .about_header h2::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  position: relative;
+  bottom: 4px;
+  content: "01" ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.about_me .inner section .about_header .divider {
+  margin: auto auto auto 20px;
+  background-color: #303c55;
+  height: 2px;
+  width: 200px;
+}
+
+.about_me .inner section .details .img {
+  margin: auto;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.about_me .inner section .details .img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.about_me .inner section .details .img .img_overlay {
+  position: absolute;
+  background: #64ffdb59;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.about_me .inner section .details .img .img_overlay:hover {
+  opacity: 0;
+}
+
+.about_me .inner section .details .img .img_bg {
+  position: absolute;
+  height: 100%;
+  width: 110%;
+  display: none;
+  -webkit-transform: translate(10px, 40px);
+          transform: translate(10px, 40px);
+}
+
+.about_me .inner section .details p {
+  margin: 0px 0px 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  word-spacing: 2px;
+  color: #8892b0;
+  font-weight: bold;
+}
+
+.about_me .inner section .details .skills_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(140px, 200px))[2];
+      grid-template-columns: repeat(2, minmax(140px, 200px));
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  color: #8892b0;
+  font-family: "Roboto", sans-serif;
+  list-style: outside none none;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.about_me .inner section .details .skills_list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.about_me .inner section .details .skills_list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  line-height: 19px;
+  color: #64ffda;
+}
+
+@media (max-width: 567px) {
+  .about_me {
+    margin-top: 200px;
+  }
+  .about_me .about_header .divider {
+    width: 100px !important;
+  }
+}
+
+.img_overlay:hover .img_bg {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  height: 100px;
+}
+
+.knowledge {
+  height: 60vh;
+  margin-top: 70px;
+}
+
+.knowledge .inner {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.knowledge .inner section {
+  max-width: 700px;
+  padding: 100px 0px;
+  margin: 0px auto;
+}
+
+.knowledge .inner section .knowledge_header {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.knowledge .inner section .knowledge_header h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  margin: auto 20px auto 0;
+  font-size: clamp(26px, 5vw, 40px);
+  white-space: nowrap;
+  line-height: 1.1;
+  color: #ccd6f6;
+}
+
+.knowledge .inner section .knowledge_header h2::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  position: relative;
+  bottom: 4px;
+  content: "02" ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.knowledge .inner section .knowledge_header .divider {
+  margin: auto auto auto 20px;
+  background-color: #303c55;
+  height: 2px;
+  width: 200px;
+}
+
+.knowledge .inner section .MuiSvgIcon-root {
+  color: #64ffda;
+}
+
+.knowledge .inner section .MuiSvgIcon-root {
+  color: #64ffda;
+}
+
+.knowledge .inner section .tab {
+  font-weight: bold;
+  -webkit-transition: all 0.5 ease;
+  transition: all 0.5 ease;
+  color: #8892b0;
+}
+
+.knowledge .inner section .tab:focus {
+  color: #64ffda;
+}
+
+.knowledge .inner section .tab:hover {
+  background-color: #172a45;
+  color: #64ffda;
+}
+
+.skills_details {
+  width: 75%;
+  margin: auto 20px auto 20px;
+}
+
+.skills_details p {
+  color: #ccd6f6;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.skills_details p span {
+  color: #64ffda;
+}
+
+.skills_details p::before {
+  content: "▹";
+  margin-right: 5px;
+  left: 0px;
+  line-height: 19px;
+  color: #64ffda;
+}
+
+@media (max-width: 600px) {
+  .knowledge {
+    margin-top: 230px;
+  }
+  .knowledge section .divider {
+    display: none;
+  }
+  .knowledge section .tab {
+    font-size: 12px;
+  }
+  .skills_details {
+    max-height: 240px;
+    overflow: scroll;
+  }
+  .skills_details p {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

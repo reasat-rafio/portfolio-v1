@@ -20,8 +20,6 @@ const LogoOpacityVariants = {
 const Header = ({ mbl_menu, setMbl_menu }) => {
   const [active, setActive] = useState(false);
 
-  console.log(active);
-
   window.addEventListener("scroll", () => {
     const position = document.querySelector(".header-nav");
     let bottomPosition = position.getBoundingClientRect();
@@ -62,7 +60,7 @@ const Header = ({ mbl_menu, setMbl_menu }) => {
             animate={{ y: 0 }}
             transition={{ delay: 1.2, duration: 1, ease: "backOut" }}
           >
-            <a href="#experience">Experience</a>
+            <a href="#knowledge">Knowledge</a>
           </motion.li>
           <motion.li
             initial={{ y: -100 }}

@@ -1,9 +1,3 @@
-// firstImpression section
-@import "./Impression/impression";
-
-// Social and contact
-@import "../SocialAndContact/social";
-
 .main_body {
   margin-top: 90px;
   padding: 0 40px;
@@ -18,3 +12,15 @@
     // background: rgb(1, 111, 78);
   }
 }
+
+// Social and contact
+@import "../SocialAndContact/social";
+
+// firstImpression section
+@import "./Impression/impression";
+
+// About me
+@import "./About_Me/about_me";
+
+// Knowledge
+@import "./Knowledge/knowledge";

@@ -1,0 +1,110 @@
+.knowledge {
+  height: 60vh;
+  margin-top: 70px;
+  .inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section {
+      max-width: 700px;
+      padding: 100px 0px;
+      margin: 0px auto;
+
+      .knowledge_header {
+        margin: 20px auto;
+        display: flex;
+
+        h2 {
+          font-family: $font-sans;
+          font-weight: bold;
+          align-items: center;
+          position: relative;
+          margin: 10px 0px 40px;
+          margin: auto 20px auto 0;
+          font-size: clamp(26px, 5vw, 40px);
+          white-space: nowrap;
+          line-height: 1.1;
+          color: $lightest-slate;
+          &::before {
+            box-sizing: inherit;
+            position: relative;
+            bottom: 4px;
+            content: "02" ".";
+            margin-right: 10px;
+            color: $green;
+            font-family: $font-mono;
+            font-size: 24px;
+            font-weight: 400;
+            white-space: nowrap;
+          }
+        }
+        .divider {
+          margin: auto auto auto 20px;
+          background-color: $lightest-navy;
+          height: 2px;
+          width: 200px;
+        }
+      }
+      .MuiSvgIcon-root {
+        color: $green;
+      }
+      .MuiSvgIcon-root {
+        color: $green;
+      }
+      .tab {
+        font-weight: bold;
+        transition: all 0.5 ease;
+        color: $steel;
+        &:focus {
+          color: $green;
+        }
+        &:hover {
+          background-color: $navy;
+          color: $green;
+        }
+      }
+    }
+  }
+}
+.skills_details {
+  width: 75%;
+  margin: auto 20px auto 20px;
+  p {
+    color: #ccd6f6;
+    margin-top: 20px;
+    font-weight: bold;
+    span {
+      color: $green;
+    }
+    &::before {
+      content: "▹";
+      margin-right: 5px;
+      left: 0px;
+      line-height: 19px;
+      color: $green;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .knowledge {
+    margin-top: 230px;
+    section {
+      .divider {
+        display: none;
+      }
+      .tab {
+        font-size: 12px;
+      }
+    }
+  }
+  .skills_details {
+    max-height: 240px;
+    overflow: scroll;
+    p {
+      font-size: 13px;
+    }
+  }
+}

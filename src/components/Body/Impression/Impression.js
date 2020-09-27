@@ -69,9 +69,9 @@ const Impression = () => {
             I build things for the web.
           </motion.h3>
           <motion.p variants={pVariants}>
-            I'm a self-taught software engineer based in Dhaka, specializing in
-            building (and occasionally designing) exceptional websites,
-            applications, and few more things in between.
+            I'm a self-taught fullstack Web Developer based in Dhaka,
+            specializing in building (and occasionally designing) exceptional
+            websites, applications, and few more things in between.
           </motion.p>
           <motion.div variants={aVariants}>
             <a href="mailto:al.reasat@gmail.com">Get in Touch</a>
