@@ -14,8 +14,6 @@ html {
 
 body {
   background-color: #0a192f;
-  margin: 0 40px;
-  width: 100vw;
 }
 
 .logo_svg {
@@ -389,7 +387,7 @@ body {
   margin-top: 70px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 900px) {
   .gmail_contact {
     display: none;
   }
@@ -558,7 +556,7 @@ body {
   margin: auto;
   position: relative;
   height: 300px;
-  width: 200px;
+  width: 210px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -778,5 +776,211 @@ body {
   .skills_details p {
     font-size: 13px;
   }
+}
+
+.noteworthy_projects {
+  min-height: 60vh;
+  margin-top: 70px;
+}
+
+.noteworthy_projects .inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.noteworthy_projects .inner section {
+  max-width: 900px;
+  padding: 100px 0px;
+  margin: 0px auto;
+}
+
+.noteworthy_projects .inner section .noteworthy_projects_header {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.noteworthy_projects .inner section .noteworthy_projects_header h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  margin: auto;
+  font-size: clamp(26px, 5vw, 40px);
+  white-space: nowrap;
+  line-height: 1.1;
+  color: #ccd6f6;
+}
+
+.noteworthy_projects .inner section .noteworthy_projects_header h2::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  position: relative;
+  bottom: 4px;
+  content: "04" ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 24px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.noteworthy_projects .inner section .details {
+  height: 100%;
+}
+
+.noteworthy_projects .inner section .details .card-grid .card {
+  border-radius: 4px;
+  margin: auto;
+  min-height: 300px;
+  background-color: #172a45 !important;
+  max-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.noteworthy_projects .inner section .details .card-grid .card .card_icon:hover {
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  color: #64ffda;
+}
+
+.noteworthy_projects .inner section .details .card-grid .card .card_title {
+  font-size: 30px !important;
+  color: #ccd6f6;
+  font-weight: bold;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.noteworthy_projects .inner section .details .card-grid .card .card_details {
+  font-size: 16px;
+  color: #8892b0;
+  font-weight: bold;
+}
+
+.noteworthy_projects .inner section .details .card-grid .card .card_button {
+  cursor: default;
+  color: #8892b0;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.footer {
+  height: 60vh;
+  margin: auto;
+}
+
+.footer .inner {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .inner section {
+  max-width: 600px;
+  padding: 100px 0px;
+  margin: 0px auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer .inner section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #64ffda;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.footer .inner section h2::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  position: relative;
+  content: "05" ".";
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.footer .inner section h1 {
+  text-align: center;
+  font-size: clamp(40px, 5vw, 60px);
+  font-weight: bold;
+  color: #ccd6f6;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer .inner section p {
+  color: #8892b0;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer .inner section div {
+  line-height: 1.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .inner section div a {
+  z-index: 1;
+  display: inline-block;
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  margin-top: 50px;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.footer .inner section div a:hover {
+  background-color: rgba(10, 128, 97, 0.2);
 }
 /*# sourceMappingURL=App.css.map */

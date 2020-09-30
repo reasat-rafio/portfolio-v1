@@ -40,7 +40,7 @@ const SideDrawer = ({ setMbl_menu, mbl_menu }) => {
             <a href="#about">About</a>
           </li>
           <li>
-            <a href="#experience">Experience</a>
+            <a href="#experience">Expertise</a>
           </li>
           <li>
             <a href="#work">Work</a>

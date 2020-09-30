@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notewothy_projects",
+  "info": {
+    "name": "notewothy_projects"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    },
+    "techologies": {
+      "collection": "techologies",
+      "via": "notewothy_projects",
+      "dominant": true
+    },
+    "links": {
+      "via": "notewothy_projects",
+      "collection": "links"
+    }
+  }
+}

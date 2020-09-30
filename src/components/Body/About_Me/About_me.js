@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import img from "../../../utils/dog-3204497_1920.jpg";
+import img from "../../../utils/IMG_20200927_202758.jpg";
 
 import { Grid } from "@material-ui/core";
 import { motion } from "framer-motion";

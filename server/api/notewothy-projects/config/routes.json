@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/notewothy-projects",
+      "handler": "notewothy-projects.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/notewothy-projects/count",
+      "handler": "notewothy-projects.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/notewothy-projects/:id",
+      "handler": "notewothy-projects.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/notewothy-projects",
+      "handler": "notewothy-projects.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/notewothy-projects/:id",
+      "handler": "notewothy-projects.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/notewothy-projects/:id",
+      "handler": "notewothy-projects.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

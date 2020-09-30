@@ -1,0 +1,86 @@
+.noteworthy_projects {
+  min-height: 60vh;
+  margin-top: 70px;
+
+  .inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    section {
+      max-width: 900px;
+      padding: 100px 0px;
+      margin: 0px auto;
+      .noteworthy_projects_header {
+        margin: 20px auto;
+        display: flex;
+
+        h2 {
+          font-family: $font-sans;
+          font-weight: bold;
+          align-items: center;
+          position: relative;
+          margin: 10px 0px 40px;
+          margin: auto;
+          font-size: clamp(26px, 5vw, 40px);
+          white-space: nowrap;
+          line-height: 1.1;
+          color: $lightest-slate;
+          &::before {
+            box-sizing: inherit;
+            position: relative;
+            bottom: 4px;
+            content: "04" ".";
+            margin-right: 10px;
+            color: $green;
+            font-family: $font-mono;
+            font-size: 24px;
+            font-weight: 400;
+            white-space: nowrap;
+          }
+        }
+      }
+      .details {
+        height: 100%;
+
+        .card-grid {
+          .card {
+            border-radius: 4px;
+            margin: auto;
+            min-height: 300px;
+            background-color: $light-navy !important;
+            max-width: 450px;
+            display: flex;
+            justify-content: center;
+
+            .card_icon {
+              &:hover {
+                transition: all ease 0.4s;
+                color: $green;
+              }
+            }
+            .card_title {
+              font-size: 30px !important;
+              color: $lightest-slate;
+              font-weight: bold;
+              font-family: $font-sans;
+            }
+            .card_details {
+              font-size: 16px;
+              color: $steel;
+              font-weight: bold;
+            }
+            .card_button {
+              cursor: default;
+              color: $steel;
+              font-weight: bold;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 567px) {
+}
