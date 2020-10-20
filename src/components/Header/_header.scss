@@ -1,116 +1,116 @@
 %liStyle {
-  margin-right: 5px;
-  color: $green;
-  font-size: 12px;
-  text-align: right;
+   margin-right: 5px;
+   color: $green;
+   font-size: 12px;
+   text-align: right;
 }
 .active {
-  transition: all 0.2s ease-in-out;
-  height: 80px;
-  top: 0;
-  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7) !important;
-  background-color: rgba(10, 25, 47, 0.85);
+   transition: all 0.2s ease-in-out;
+   height: 80px;
+   top: 0;
+   box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7) !important;
+   background-color: rgba(10, 25, 47, 0.85);
 }
 .header {
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
-  transition: all 0.2s ease-in-out;
-  padding: 0 40px;
-  height: 80px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   filter: none !important;
+   pointer-events: auto !important;
+   user-select: auto !important;
+   transition: all 0.2s ease-in-out;
+   padding: 0 40px;
+   height: 80px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 
-  &-nav {
-    margin: auto;
-    display: flex;
-    height: 50px;
-    width: 100%;
-    .logo {
-      cursor: pointer;
+   &-nav {
+      margin: auto;
       display: flex;
-      align-items: center;
-      z-index: 1000 !important;
-    }
-
-    // mobile menu btn
-    .mobile_menu-btn {
-      z-index: 10000;
-      position: relative;
-      display: none;
-      justify-content: center;
-      align-items: center;
-
-      .menu-btn {
-        border: none;
-        outline: none;
-        background: transparent;
-        cursor: pointer;
-        z-index: 10000;
-      }
-    }
-
-    ul {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      list-style: none;
+      height: 50px;
       width: 100%;
-      font-family: $font-mono;
-      li {
-        margin: 0 15px;
-        font-size: 13px;
+      .logo {
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         z-index: 1000 !important;
+      }
 
-        a {
-          text-decoration: none;
-          color: #a8b2d1;
-          cursor: pointer;
-          &:hover {
-            color: $green;
-          }
-        }
+      // mobile menu btn
+      .mobile_menu-btn {
+         z-index: 10000;
+         position: relative;
+         display: none;
+         justify-content: center;
+         align-items: center;
+
+         .menu-btn {
+            border: none;
+            outline: none;
+            background: transparent;
+            cursor: pointer;
+            z-index: 10000;
+         }
       }
-      li:first-child {
-        a::before {
-          @extend %liStyle;
-          content: "01" ".";
-        }
+
+      ul {
+         display: flex;
+         justify-content: flex-end;
+         align-items: center;
+         list-style: none;
+         width: 100%;
+         font-family: $font-mono;
+         li {
+            margin: 0 15px;
+            font-size: 13px;
+
+            a {
+               text-decoration: none;
+               color: #a8b2d1;
+               cursor: pointer;
+               &:hover {
+                  color: $green;
+               }
+            }
+         }
+         li:first-child {
+            a::before {
+               @extend %liStyle;
+               content: "01" ".";
+            }
+         }
+         li:nth-child(2) {
+            a::before {
+               @extend %liStyle;
+               content: "02" ".";
+            }
+         }
+         li:nth-child(3) {
+            a::before {
+               @extend %liStyle;
+               content: "03" ".";
+            }
+         }
+         li:last-child {
+            a::before {
+               @extend %liStyle;
+               content: "04" ".";
+            }
+         }
       }
-      li:nth-child(2) {
-        a::before {
-          @extend %liStyle;
-          content: "02" ".";
-        }
-      }
-      li:nth-child(3) {
-        a::before {
-          @extend %liStyle;
-          content: "03" ".";
-        }
-      }
-      li:last-child {
-        a::before {
-          @extend %liStyle;
-          content: "04" ".";
-        }
-      }
-    }
-  }
+   }
 }
 
 // media query for mobile devices
 @media (max-width: 767px) {
-  .header {
-    .mobile_menu-btn {
-      display: flex;
-      margin-left: auto;
-    }
-    ul {
-      display: none;
-    }
-  }
+   .header {
+      .mobile_menu-btn {
+         display: flex;
+         margin-left: auto;
+      }
+      ul {
+         display: none;
+      }
+   }
 }

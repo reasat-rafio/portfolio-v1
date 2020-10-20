@@ -301,9 +301,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  rotate: 90deg;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
 }
 
 .gmail_contact .inner a {
@@ -383,7 +382,8 @@ body {
   width: 150px;
   background-color: #a8b2d1 !important;
   display: block;
-  rotate: 90deg;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
   margin-top: 70px;
 }
 
@@ -432,7 +432,7 @@ body {
   margin: 0px;
   font-size: clamp(37px, 8vw, 72px);
   color: #a8b2d1;
-  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 }
 
 .impression .inner section h3 {
@@ -440,7 +440,7 @@ body {
   color: #8892b0;
   line-height: 0.9;
   font-size: clamp(37px, 8vw, 72px);
-  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+  font-family: "Calibre", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 }
 
 .impression .inner section p {
@@ -829,7 +829,7 @@ body {
           box-sizing: inherit;
   position: relative;
   bottom: 4px;
-  content: "04" ".";
+  content: "03" ".";
   margin-right: 10px;
   color: #64ffda;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -845,7 +845,7 @@ body {
 .noteworthy_projects .inner section .details .card-grid .card {
   border-radius: 4px;
   margin: auto;
-  min-height: 300px;
+  min-height: 350px;
   background-color: #172a45 !important;
   max-width: 450px;
   display: -webkit-box;
@@ -880,6 +880,34 @@ body {
   color: #8892b0;
   font-weight: bold;
   font-size: 10px;
+}
+
+.noteworthy_projects .inner section .seemore {
+  text-align: center;
+  z-index: 1;
+  display: block;
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  font-size: 14px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  line-height: 1;
+  margin: auto;
+  width: 140px;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  margin-top: 50px;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.noteworthy_projects .inner section .seemore:hover {
+  background-color: rgba(10, 128, 97, 0.2);
 }
 
 .footer {
@@ -920,7 +948,7 @@ body {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
   position: relative;
-  content: "05" ".";
+  content: "04" ".";
   margin-right: 10px;
   color: #64ffda;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
