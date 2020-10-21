@@ -30,20 +30,3 @@ const Gmail = () => {
 };
 
 export default Gmail;
-
-{
-   /* <svg viewBox="0,0,4,5" height="100" style="margin: 3.49mm;">
-        <path
-          d="M 0.5 5 V 0.5 H 2 M 2 0.5 C 3.5 0.5 3.5 2.5 2 2.5 H 0.5"
-          stroke="black"
-          fill="none"
-          stroke-width="1"
-          stroke-opacity="0.1"
-        ></path>
-        <polygon
-          points="1.32,2.9 2.12,2.9 2.42,2.9 4,5 2.8,5"
-          fill="black"
-          fill-opacity="0.1"
-        />
-      </svg> */
-}

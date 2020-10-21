@@ -1,16 +1,16 @@
 .main_body {
-  margin-top: 90px;
-  padding: 0 40px;
-  height: 100%;
-  transition: all 0.2s ease;
-  .left_grid {
-    // background: rgb(1, 111, 78);
-  }
-  .content {
-  }
-  .right_grid {
-    // background: rgb(1, 111, 78);
-  }
+   margin-top: 90px;
+   padding: 0 40px;
+   height: 100%;
+   transition: all 0.2s ease;
+   .left_grid {
+      // background: rgb(1, 111, 78);
+   }
+   .content {
+   }
+   .right_grid {
+      // background: rgb(1, 111, 78);
+   }
 }
 
 // Social and contact
@@ -24,6 +24,9 @@
 
 // Knowledge
 @import "./Knowledge/knowledge";
+
+// I've Build
+@import "./I_Have_Built/iveBuilt";
 
 // Other_Noteworthy_Projects
 @import "./Other_Noteworthy_Projects/noteworthy_projects";
