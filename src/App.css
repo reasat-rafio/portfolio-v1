@@ -71,6 +71,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 100;
 }
 
 .header-nav {
@@ -213,6 +214,7 @@ body {
 .sideDrawer .drop {
   height: 100%;
   width: 100%;
+  z-index: 10000;
 }
 
 .sideDrawer .drop .menu-btn {
