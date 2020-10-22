@@ -28,6 +28,7 @@
           color: $lightest-slate;
         }
       }
+
       .details {
         height: 100%;
 
@@ -36,6 +37,7 @@
             border-radius: 4px;
             margin: auto;
             min-height: 350px;
+
             background-color: $light-navy !important;
             max-width: 450px;
             display: flex;
@@ -96,4 +98,11 @@
   }
 }
 @media (max-width: 567px) {
+  .noteworthy_projects {
+    .card-grid {
+      .card {
+        min-height: 300px !important;
+      }
+    }
+  }
 }

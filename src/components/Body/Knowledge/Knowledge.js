@@ -17,7 +17,7 @@ const Knowledge = () => {
       }
     });
   }, [active]);
-  console.log(active);
+
   return (
     <motion.div
       id="knowledge"
