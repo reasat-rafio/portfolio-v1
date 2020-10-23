@@ -73,3 +73,18 @@
       }
    }
 }
+
+@media (max-width: 567px) {
+   .impression {
+      .inner {
+         section {
+            h3 {
+               font-size: 32px;
+            }
+            p {
+               font-size: 16px;
+            }
+         }
+      }
+   }
+}

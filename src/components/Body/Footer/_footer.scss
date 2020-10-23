@@ -79,3 +79,15 @@
       }
    }
 }
+
+@media (max-width: 567px) {
+   .footer {
+      .inner {
+         section {
+            p {
+               font-size: 14px !important;
+            }
+         }
+      }
+   }
+}

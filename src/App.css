@@ -485,6 +485,15 @@ body {
   background-color: rgba(10, 128, 97, 0.2);
 }
 
+@media (max-width: 567px) {
+  .impression .inner section h3 {
+    font-size: 32px;
+  }
+  .impression .inner section p {
+    font-size: 16px;
+  }
+}
+
 .about_me {
   height: 60vh;
   margin-top: 70px;
@@ -634,6 +643,12 @@ body {
   .about_me {
     margin-top: 200px;
   }
+  .about_me .details p {
+    font-size: 15px !important;
+  }
+  .about_me .details .skills_list {
+    font-size: 13px !important;
+  }
   .about_me .about_header .divider {
     width: 100px !important;
   }
@@ -777,10 +792,6 @@ body {
   .skills_details p {
     font-size: 13px;
   }
-}
-
-.i_have_build {
-  margin-top: 70px;
 }
 
 .i_have_build .inner {
@@ -991,6 +1002,9 @@ body {
 }
 
 @media (max-width: 667px) {
+  .i_have_build h2 {
+    margin-right: auto !important;
+  }
   .i_have_build .have_built_header .divider {
     display: none;
   }
@@ -1031,7 +1045,6 @@ body {
 
 .noteworthy_projects {
   min-height: 60vh;
-  margin-top: 70px;
 }
 
 .noteworthy_projects .inner {
@@ -1100,7 +1113,7 @@ body {
 }
 
 .noteworthy_projects .inner section .details .card-grid .card .card_title {
-  font-size: 30px !important;
+  font-size: 30px;
   color: #ccd6f6;
   font-weight: bold;
   font-family: "Source Sans Pro", sans-serif;
@@ -1149,7 +1162,13 @@ body {
 
 @media (max-width: 567px) {
   .noteworthy_projects .card-grid .card {
-    min-height: 300px !important;
+    min-height: 270px !important;
+  }
+  .noteworthy_projects .card-grid .card .card_title {
+    font-size: 27px !important;
+  }
+  .noteworthy_projects .card-grid .card .card_details {
+    font-size: 14px !important;
   }
 }
 
@@ -1253,5 +1272,11 @@ body {
 
 .footer .inner section div a:hover {
   background-color: rgba(10, 128, 97, 0.2);
+}
+
+@media (max-width: 567px) {
+  .footer .inner section p {
+    font-size: 14px !important;
+  }
 }
 /*# sourceMappingURL=App.css.map */
