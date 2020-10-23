@@ -643,6 +643,10 @@ body {
   .about_me {
     margin-top: 200px;
   }
+  .about_me .details .img {
+    height: 250px !important;
+    width: 180px !important;
+  }
   .about_me .details p {
     font-size: 15px !important;
   }

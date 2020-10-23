@@ -28,7 +28,11 @@ const Socials = () => {
          <ul className="__all_socials">
             <li>
                <IconButton aria-label="github">
-                  <a target="_blank" href="https://github.com/reasat-rafio">
+                  <a
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     href="https://github.com/reasat-rafio"
+                  >
                      <GitHubIcon className="icon" />
                   </a>
                </IconButton>
@@ -37,6 +41,7 @@ const Socials = () => {
                <IconButton aria-label="LinkIn">
                   <a
                      target="_blank"
+                     rel="noopener noreferrer"
                      href="https://www.linkedin.com/in/reasat-rafio-594718194"
                   >
                      <LinkedInIcon className="icon" />
@@ -45,7 +50,11 @@ const Socials = () => {
             </li>
             <li>
                <IconButton aria-label="twitter">
-                  <a target="_blank" href="https://twitter.com/ar_rafffio">
+                  <a
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     href="https://twitter.com/ar_rafffio"
+                  >
                      <TwitterIcon className="icon" />
                   </a>
                </IconButton>
@@ -54,6 +63,7 @@ const Socials = () => {
                <IconButton aria-label="facebook">
                   <a
                      target="_blank"
+                     rel="noopener noreferrer"
                      href="https://www.facebook.com/alreasat.rafio"
                   >
                      <FacebookIcon className="icon" />

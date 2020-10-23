@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Main from "./components/Main/Main";
-import Logo_Svg from "./components/OpeningSvg/Logo_Svg";
-import { motion, AnimatePresence } from "framer-motion";
+import LogoSvg from "./components/OpeningSvg/Logo_Svg";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./components/MUI theme/theme";
 
@@ -17,13 +16,13 @@ function App() {
    return (
       <>
          {logo ? (
-            <Switch>
-               <ThemeProvider theme={theme}>
+            <ThemeProvider theme={theme}>
+               <Switch>
                   <Route exact path="/" component={Main} />
-               </ThemeProvider>
-            </Switch>
+               </Switch>
+            </ThemeProvider>
          ) : (
-            <Logo_Svg />
+            <LogoSvg />
          )}
       </>
    );

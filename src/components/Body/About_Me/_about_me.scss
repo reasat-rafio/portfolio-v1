@@ -123,6 +123,10 @@
    .about_me {
       margin-top: 200px;
       .details {
+         .img {
+            height: 250px !important;
+            width: 180px !important;
+         }
          p {
             font-size: 15px !important;
          }

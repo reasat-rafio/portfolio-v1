@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Burger_menu from "../Burger_menu";
+import BurgerMenu from "../Burger_menu";
 
 const SideDrawer = ({ setMbl_menu, mbl_menu }) => {
    const backDropVariants = {
@@ -32,7 +32,7 @@ const SideDrawer = ({ setMbl_menu, mbl_menu }) => {
             className="menu-btn"
             onClick={() => setMbl_menu((prevMenu) => (prevMenu = !prevMenu))}
          >
-            <Burger_menu />
+            <BurgerMenu />
          </motion.button>
          <div>
             <ul className="sideDrawer_ul">

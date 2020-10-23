@@ -63,27 +63,29 @@ const IHaveBuilt = () => {
                         <h3 className="project-title">Red Onion</h3>
                         <div className="project_description">
                            <p>
-                              A nicer look at your GitHub profile and repository
-                              stats with data visualizations of your top
-                              languages and stars. Sort through your top repos
-                              by number of stars, forks, and size.
+                              A demo restaurant website with auth where anyone
+                              can login and order foods. All the states are
+                              managed by redux here. Material UI is heavily used
+                              here.
                            </p>
                         </div>
                         <ul>
                            <Button className="btn">React & Redux</Button>
                            <Button className="btn">Strapi</Button>
-                           <Button className="btn">Metarial UI</Button>
+                           <Button className="btn">Material UI</Button>
                         </ul>
 
                         <div className="proeject-links">
                            <a
                               target="_blank"
+                              rel="noopener noreferrer"
                               href="https://github.com/reasat-rafio/Red-onion.git"
                            >
                               <GitHubIcon className="icon" />
                            </a>
                            <a
                               target="_blank"
+                              rel="noopener noreferrer"
                               href="https://red-onion71.netlify.app"
                            >
                               <ExitToAppSharpIcon className="icon" />
@@ -99,13 +101,14 @@ const IHaveBuilt = () => {
                         className="inner_details_text bottom"
                      >
                         <p className="project_overline">Featured Project</p>
-                        <h3 className="project-title">Red Onion</h3>
+                        <h3 className="project-title">ভ্রমণ</h3>
                         <div className="project_description">
                            <p>
-                              A nicer look at your GitHub profile and repository
-                              stats with data visualizations of your top
-                              languages and stars. Sort through your top repos
-                              by number of stars, forks, and size.
+                              A MERN stack website where any logged in user can
+                              upload about places they have traveled all around
+                              bangladesh. Later other users can find the best
+                              place they want to go by searcing name and sorting
+                              by the price.
                            </p>
                         </div>
                         <ul>
@@ -117,12 +120,14 @@ const IHaveBuilt = () => {
                         <div className="proeject-links">
                            <a
                               target="_blank"
+                              rel="noopener noreferrer"
                               href="https://github.com/reasat-rafio/travel_site.git"
                            >
                               <GitHubIcon className="icon" />
                            </a>
                            <a
                               target="_blank"
+                              rel="noopener noreferrer"
                               href="https://travel-bd1.herokuapp.com/"
                            >
                               <ExitToAppSharpIcon className="icon" />

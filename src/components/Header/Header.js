@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
-import Burger_menu from "./Burger_menu";
-import Cross_menu from "./Cross_menu";
+import React, { useState } from "react";
+import CrossMenu from "./Cross_menu";
 import Svg from "./Svg";
-
 import { motion } from "framer-motion";
 
 const LogoOpacityVariants = {
@@ -85,7 +83,7 @@ const Header = ({ mbl_menu, setMbl_menu }) => {
                         setMbl_menu((prevMenu) => (prevMenu = !prevMenu))
                      }
                   >
-                     <Cross_menu />
+                     <CrossMenu />
                   </button>
                )}
             </div>
