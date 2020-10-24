@@ -11,7 +11,7 @@ const Noteworthy_Projects = () => {
    useEffect(() => {
       async function dataFetch() {
          const response = await axios.get(
-            `http://localhost:1337/notewothy-projects?_limit=${
+            `https://portfolio1-rafio.herokuapp.com/notewothy-projects?_limit=${
                !see_more ? "6" : "12"
             }`
          );

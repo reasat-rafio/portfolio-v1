@@ -58,7 +58,7 @@ const Header = ({ mbl_menu, setMbl_menu }) => {
                   animate={{ y: 0 }}
                   transition={{ delay: 1.2, duration: 1, ease: "backOut" }}
                >
-                  <a href="#knowledge">Expertise</a>
+                  <a href="#experience">Expertise</a>
                </motion.li>
                <motion.li
                   initial={{ y: -100 }}

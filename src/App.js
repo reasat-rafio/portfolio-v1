@@ -7,7 +7,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./components/MUI theme/theme";
 
 function App() {
-   const [logo, setLogo] = useState(true);
+   const [logo, setLogo] = useState(false);
 
    setTimeout(() => {
       setLogo(true);
